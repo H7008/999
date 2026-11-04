@@ -1,5 +1,5 @@
 html {
-    background-image: url('banner.jpg');
+    background-image: url('img.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -82,10 +82,11 @@ a {
     background-color: #d42a01;
 }
 
-.btn-multi {
-    background-color: #b8860b;
+.btn-ps5 {
+    background-color: #3d3f4e;
 }
 
-.btn-multi:hover {
-    background-color: #daa520;
+.btn-ps5:hover {
+    background-color: #c2c2c2;
+    color: #303030;
 }
