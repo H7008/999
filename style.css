@@ -1,91 +1,51 @@
+/* CENTER ALZAEIM - BLACK & GOLD */
+
+:root {
+  --zaeim-gold: #d6ad45;
+  --zaeim-black: #080808;
+}
+
 html {
-    background-image: url('img.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-color: #24272b;
-    color: white;
-    text-align: center;
-    overflow: hidden;
+  background: var(--zaeim-black) url("zaeim.jpg")
+    center center / cover fixed no-repeat !important;
 }
 
-h1 {
-    text-shadow: 0.1em 0.1em 0.2em black;
-    font-size: 25px;
-    color: white;
+body {
+  background-color: transparent !important;
+  color: #fff !important;
 }
 
+/* Main headings */
+h1, h2, h3 {
+  color: var(--zaeim-gold) !important;
+  text-shadow: 0 2px 8px #000;
+}
+
+/* Images */
+img {
+  border-color: var(--zaeim-gold);
+}
+
+/* Buttons */
+button, input, select {
+  border: 1px solid var(--zaeim-gold) !important;
+  border-radius: 8px !important;
+}
+
+/* Gold hover effect */
+button:hover {
+  background: var(--zaeim-gold) !important;
+  color: #080808 !important;
+}
+
+/* Links */
 a {
-    text-decoration: none;
+  color: var(--zaeim-gold) !important;
 }
 
-#progress {
-    display: block;
-}
-
-#menu {
-    display: block;
-}
-
-#crypto {
-    display: none;
-}
-
-#tools {
-    display: none;
-}
-
-#lnx {
-    display: none;
-}
-
-#mods {
-    display: none;
-}
-
-.btn {
-    background-color: #003263;
-    color: white;
-    width: 227px;
-    height: 46px;
-    padding-bottom: 5px;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border-style: none;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-.btn:hover {
-    background-color: #0069d9;
-}
-
-.btn-onln {
-    background-color: #076300;
-}
-
-.btn-onln:hover {
-    background-color: #18891b;
-}
-
-.btn-toolbox {
-    background-color: #ae2301;
-}
-
-.btn-toolbox:hover {
-    background-color: #d42a01;
-}
-
-.btn-multi {
-    background-color: #b8860b;
-}
-
-.btn-multi:hover {
-    background-color: #daa520;
+/* Panels */
+.box, .card {
+  background: rgba(8, 8, 8, 0.88);
+  border: 1px solid var(--zaeim-gold);
+  border-radius: 10px;
 }
