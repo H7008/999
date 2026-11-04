@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مركز الزعيم - PS4 Exploit Host</title>
+    <title>PS4 Exploit Host - مركز الزعيم</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: system-ui, -apple-system, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         body {
-            background-color: #0d0f17;
+            /* وضع صورتك كخلفية كاملة للموقع */
+            background-color: #0b0c10;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)), url('banner.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
             color: #ffffff;
-            text-align: center;
-            padding-bottom: 50px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
         }
 
-        /* بنر الصورة في الأعلى */
-        .banner-container {
+        /* صورة البنر العلوية مع زر الواتساب */
+        .top-banner {
             position: relative;
-            max-width: 1000px;
-            margin: 20px auto 30px auto;
-            border-radius: 14px;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 0 25px rgba(229, 193, 88, 0.3);
-            border: 2px solid rgba(229, 193, 88, 0.5);
+            border: 2px solid #e5c158;
+            box-shadow: 0 0 25px rgba(229, 193, 88, 0.4);
+            margin-bottom: 20px;
         }
 
-        .banner-image {
+        .top-banner img {
             width: 100%;
             height: auto;
             display: block;
@@ -45,69 +56,26 @@
             z-index: 10;
         }
 
-        /* حاوية أزرار التعديل */
-        .exploit-section {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(20, 24, 36, 0.85);
-            border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .section-title {
-            color: #e5c158;
-            margin-bottom: 25px;
-            font-size: 22px;
-        }
-
-        .btn-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .exploit-btn {
-            background: linear-gradient(145deg, #1f2536, #141824);
-            color: #fff;
-            border: 1px solid rgba(229, 193, 88, 0.4);
-            padding: 16px;
-            font-size: 17px;
+        /* عنوان الموقع الأصلي */
+        h1 {
+            font-size: 26px;
             font-weight: bold;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            display: block;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 10px;
+            text-align: center;
         }
 
-        .exploit-btn:hover {
-            transform: translateY(-3px);
-            border-color: #e5c158;
-            box-shadow: 0 0 15px rgba(229, 193, 88, 0.4);
-            background: linear-gradient(145deg, #e5c158, #c5a83a);
-            color: #000;
+        h2 {
+            font-size: 20px;
+            color: #e5c158;
+            text-shadow: 2px 2px 4px #000000;
+            margin-bottom: 25px;
+            font-weight: bold;
         }
-    </style>
-</head>
-<body>
 
-    <!-- صورة مركز الزعيم مع رابط الواتساب المباشر -->
-    <div class="banner-container">
-        <img src="banner.jpg" alt="مركز الزعيم" class="banner-image">
-        <a href="https://wa.me/9647888721000" class="whatsapp-link" target="_blank" title="تواصل عبر واتساب"></a>
-    </div>
-
-    <!-- أزرار التعديل والجيلبريك للـ PS4 -->
-    <div class="exploit-section">
-        <h2 class="section-title">اختر إصدار النظام (Firmware)</h2>
-        <div class="btn-grid">
-            <a href="900goldhen/index.html" class="exploit-btn">9.00 GoldHEN</a>
-            <a href="900v3/index.html" class="exploit-btn">9.00 V3 Host</a>
-            <a href="672goldhen/index.html" class="exploit-btn">6.72 GoldHEN</a>
-            <a href="672/index.html" class="exploit-btn">6.72 Exploit</a>
-            <a href="505/index.html" class="exploit-btn">5.05 Exploit</a>
-        </div>
-    </div>
-
-</body>
-</html>
+        /* شبكة الأزرار بنفس تصميم الموقع الأصلي */
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align
